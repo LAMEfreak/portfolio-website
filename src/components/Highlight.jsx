@@ -14,7 +14,7 @@ const Highlight = ({
 }) => {
   return (
     <div className="mb-20 xl:mb-60">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <div className="relative z-10">
           <h3
             className={`${headerColor} font-semibold text-4xl mb-8 text-center sm:text-left`}
@@ -38,7 +38,7 @@ const Highlight = ({
               })}
             </div>
 
-            <a href={link}>
+            <a href={link} target="_blank" rel="noreferrer">
               <div className="absolute hidden xl:block mb-4 -top-0 left-2/4 z-[-2] ">
                 <video
                   src={video}

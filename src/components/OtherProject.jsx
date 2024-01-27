@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const OtherProject = ({ title, text, link, type }) => {
   return (
-    <a href={link}>
+    <a href={link} target="_blank" rel="noreferrer">
       <div className="bg-[#0d253f] p-8 rounded-md shadow-2xl relative transition-all transform hover:-translate-y-3 xl:h-[20rem]">
         <MdOutlineFolderOpen className="text-[#c4d5e7] mb-6" size={40} />
         <HiOutlineExternalLink
