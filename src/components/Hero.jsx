@@ -8,7 +8,7 @@ const Hero = ({ title, subtitle, description }) => {
     <>
       <div className="md:pt-[35vh] pt-[30vh]">
         <div className="mb-[40vh] flex flex-col items-center">
-          <h1 className="text-3xl font-semibold text-cyan-300 md:text-6xl text-center leading-snug">
+          <h1 className="text-3xl md:text-6xl font-semibold text-cyan-300  text-center leading-snug">
             {title}
           </h1>
           <h2 className="text-3xl md:text-4xl font-medium my-8 text-center leading-snug">

@@ -9,7 +9,7 @@ const ProjectHighlight = ({ componentColors, componentContent }) => {
       <a href={link} target="_blank" rel="noreferrer">
         <div className="relative z-10">
           <h3
-            className={`${headerColor} font-semibold text-4xl mb-8 text-center sm:text-left`}
+            className={`${headerColor} font-semibold text-3xl md:text-4xl mb-8 text-center sm:text-left`}
           >
             {title}
           </h3>

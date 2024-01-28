@@ -37,7 +37,9 @@ function App() {
         description="I build delightful digital product experiences that inspire users and empower businesses. Learning full-stack development at Rocket Academy."
       />
       <div>
-        <h2 className="text-5xl font-semibold text-center">Highlights</h2>
+        <h2 className="font-semibold text-center text-3xl md:text-4xl">
+          Highlights
+        </h2>
         <div className="w-[16rem] border-solid border border-gray-600 mt-8 rounded-md mb-[8rem] mx-auto"></div>
 
         <ProjectHighlight
@@ -76,7 +78,7 @@ function App() {
           }}
         />
       </div>
-      <h2 className="text-4xl font-semibold text-center mt-[20rem] text-cyan-300 mb-16">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center mt-[20rem] text-cyan-300 mb-16">
         Other Projects
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 grid-flow-row">
