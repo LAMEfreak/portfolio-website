@@ -32,8 +32,8 @@ function App() {
         <p className="mt-3 font-semibold">Coldplay ➖ Hymn for the Weekend</p>
       </div>
       <Hero
-        heroTitle="Weirong's Portfolio"
-        heroSubtitle="Weaving Wonders with Web Dev"
+        title="Weirong's Portfolio"
+        subtitle="Weaving Wonders with Web Dev"
         description="I build delightful digital product experiences that inspire users and empower businesses. Learning full-stack development at Rocket Academy."
       />
       <div>
