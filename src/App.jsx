@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div className="fixed inset-x-0 flex flex-col pt-6 items-center opacity-10 hover:opacity-90 transition:all duration-700 w-full z-20">
+      <div className="fixed inset-x-0 flex flex-col pt-6 items-center opacity-20 hover:opacity-90 transition:all duration-700 w-full z-20">
         <audio ref={audioRef} src={music} controls></audio>
         <p className="mt-3 font-semibold">Coldplay ➖ Hymn for the Weekend</p>
       </div>
