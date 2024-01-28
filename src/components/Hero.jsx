@@ -3,18 +3,18 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import PropTypes from "prop-types";
 
-const Hero = ({ h1, h2, description }) => {
+const Hero = ({ heroTitle, heroSubtitle, description }) => {
   
 
   return (
     <>
       <div className="md:pt-[35vh] pt-[30vh]">
         <div className="mb-[40vh] flex flex-col items-center">
-          <h1 className="text-5xl font-semibold text-cyan-300 md:text-7xl text-center leading-snug">
-            {h1}
+          <h1 className="text-3xl font-semibold text-cyan-300 md:text-6xl text-center leading-snug">
+            {heroTitle}
           </h1>
-          <h2 className="text-3xl md:text-5xl font-medium my-8 text-center leading-snug">
-            {h2}
+          <h2 className="text-3xl md:text-4xl font-medium my-8 text-center leading-snug">
+            {heroSubtitle}
           </h2>
           <p className="max-w-xl mb-8 text-center">{description}</p>
           <div className="flex gap-6">
@@ -66,8 +66,8 @@ const Hero = ({ h1, h2, description }) => {
 };
 
 Hero.propTypes = {
-  h1: PropTypes.string.isRequired,
-  h2: PropTypes.string.isRequired,
+  heroTitle: PropTypes.string.isRequired,
+  heroSubtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 export default Hero;

@@ -2,7 +2,7 @@ import { MdOutlineFolderOpen } from "react-icons/md";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import PropTypes from "prop-types";
 
-const OtherProject = ({ title, text, link, type }) => {
+const Project = ({ title, text, link, type }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <div className="bg-[#0d253f] p-8 rounded-md shadow-2xl relative transition-all transform hover:-translate-y-3 xl:h-[20rem]">
@@ -21,11 +21,11 @@ const OtherProject = ({ title, text, link, type }) => {
   );
 };
 
-OtherProject.propTypes = {
+Project.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 };
 
-export default OtherProject;
+export default Project;

@@ -1,17 +1,9 @@
 import PropTypes from "prop-types";
 
-const Highlight = ({
-  headerColor,
-  bgColor,
-  textColor,
-  bgColorPill,
-  textColorPill,
-  title,
-  description,
-  technologies,
-  video,
-  link,
-}) => {
+const ProjectHighlight = ({ componentColors, componentContent }) => {
+  const { headerColor, bgColor, textColor, bgColorPill, textColorPill } =
+    componentColors;
+  const { title, description, technologies, video, link } = componentContent;
   return (
     <div className="mb-20 xl:mb-60">
       <a href={link} target="_blank" rel="noreferrer">
@@ -58,17 +50,22 @@ const Highlight = ({
   );
 };
 
-Highlight.propTypes = {
-  headerColor: PropTypes.string.isRequired,
-  bgColor: PropTypes.string.isRequired,
-  textColor: PropTypes.string.isRequired,
-  bgColorPill: PropTypes.string.isRequired,
-  textColorPill: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  technologies: PropTypes.string.isRequired,
-  video: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+ProjectHighlight.propTypes = {
+  componentColors: PropTypes.shape({
+    headerColor: PropTypes.string.isRequired,
+    bgColor: PropTypes.string.isRequired,
+    textColor: PropTypes.string.isRequired,
+    bgColorPill: PropTypes.string.isRequired,
+    textColorPill: PropTypes.string.isRequired,
+  }),
+
+  componentContent: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    video: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }),
 };
 
-export default Highlight;
+export default ProjectHighlight;
