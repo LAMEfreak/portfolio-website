@@ -1,7 +1,8 @@
 import "./App.css";
 import { useEffect, useRef } from "react";
 
-import chefVideo from "./assets/recipe.mp4";
+import cardVideo from "./assets/card.mp4";
+import wordVideo from "./assets/word.mp4";
 import clockVideo from "./assets/clock.mp4";
 import Project from "./components/Project";
 import Hero from "./components/Hero";
@@ -51,12 +52,30 @@ function App() {
             textColorPill: "text-cyan-200",
           }}
           componentContent={{
-            title: "Recipe Site",
+            title: "High Card Game",
             description:
-              "This website showcases 4 unique dishes across Chinese and Japanese cuisines. Each dish is beautifully presented with detailed recipes and step-by-step instructions. Explore the flavors of Asia and learn how to recreate these delicious dishes in your own kitchen.",
-            technologies: ["HTML", "CSS", "JavaScript"],
-            video: chefVideo,
-            link: "https://lamefreak.github.io/recipe-site-bootcamp/",
+              "Pit your luck against a friend in this 2-player poker card game! Deal the cards, and the player with the highest card scores a point. When all 52 cards in the deck have been drawn, the player with the highest number of points wins the game. Take that!",
+            technologies: ["React", "HTML / CSS / JavaScript"],
+            video: cardVideo,
+            link: "https://lamefreak.github.io/high-card-3.2/",
+          }}
+        />
+
+        <ProjectHighlight
+          componentColors={{
+            headerColor: "text-red-300",
+            bgColor: "bg-[#441815]",
+            textColor: "text-[#FFC4C0]",
+            bgColorPill: "bg-[#78130B]",
+            textColorPill: "text[#FFC4C0]",
+          }}
+          componentContent={{
+            title: "Guess The Word",
+            description:
+              "Who doesn't love a good old mystery! But this time, it's with words! Guess the mystery word based on the number of characters and the clues provided. You have 10 chances to guess the word correctly. Good luck and have fun!",
+            technologies: ["React", "HTML / CSS / JavaScript"],
+            video: wordVideo,
+            link: "https://lamefreak.github.io/guess-the-word-3.2/",
           }}
         />
 
